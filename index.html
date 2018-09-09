@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="survey.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Survey form</h1>
+    <div id="form">
+        <p id="description">Cat survey</p>
+
+        <div id="form-container">
+            <form id="survey-form">
+                <label for="name" id="name-label" class="left-side">Name: </label>
+                <input type="text" id="name" placeholder="Enter your name" class="right-side" required>
+                <label for="email" id="email-label" class="left-side">Email: </label>
+                <input type="email" id="email" placeholder="Enter your email" class="right-side" required>
+                <label for="number" id="number-label" class="left-side">Age: </label>
+                <input type="number" id="number" min="18" max="99" placeholder="Enter your age" class="right-side" required>
+                <label for="dropdown" class="left-side">What is your level of education?</label>
+                <select name="education" id="dropdown" class="right-side">
+                    <option value="none">None</option>
+                    <option value="elementary">Elementary school</option>
+                    <option value="hughschool">Highschool</option>
+                    <option value="bachelor">Bachelor's degree</option>
+                    <option value="master">Master's degree</option>
+                    <option value="phd">Ph.D</option>
+                </select>
+                <label id="radio-question" class="left-side list-question">What type of cats do you prefer?</label>
+                <ul class="list right-side">
+                    <li>
+                        <input type="radio" name="radio-buttons" value="1">
+                        <label>Long hair cats</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="radio-buttons" value="2">
+                        <label>Short hair cats </label>
+                    </li>
+                    <li>
+                        <input type="radio" name="radio-buttons" value="3">
+                        <label>Hairless cats</label>
+                    </li>
+                </ul>
+                <label id="checkbox-question" class="left-side list-question">How did you acquire your cats?</label>
+                <ul class="list right-side">
+                    <li>
+                        <input type="checkbox" value="9">
+                        <label>Professional cat breeders</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="8">
+                        <label>Cat shelters</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="7">
+                        <label>Straight from the street</label>
+                    </li>
+                </ul>
+                <label for="comments" class="left-side list-question">What do you like about cats?</label>
+                <textarea id="comments" cols="30" rows="10"></textarea>
+                <div id="button-container"><button type="submit" id="submit">Submit</button></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

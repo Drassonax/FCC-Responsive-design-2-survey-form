@@ -1,0 +1,53 @@
+body {
+    background-color: #c4d7ed;
+}
+
+#title {
+    text-align: center;
+}
+
+#form {
+    width: 50%;
+    margin-left: 25%;
+    background-color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 10px; 
+}
+
+#form-container {
+    display: grid;
+    justify-content: center;
+}
+
+.left-side {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+.right-side {
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+  }
+
+#description {
+    text-align: center;
+    font-size: 22px;
+}
+
+.list {
+    list-style: none;
+}
+
+.list-question {
+    vertical-align: top;
+}
+
+#button-container {
+    display: grid;
+    justify-content: center;
+    margin-top: 5px;
+}
